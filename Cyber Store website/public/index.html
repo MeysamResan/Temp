@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberStore - Your Number 1 Store!</title>
+
+    <link rel="stylesheet" href="css/home.css">
+
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <!-- hero section -->
+    <header class="hero-section">
+        <div class="content">
+            <img src="img/light-logo.png" class="logo" alt="">
+            <p class="sub-heading">Your Number 1 Store!</p>
+        </div>
+    </header>
+
+    <section id="men-tshirt-products"></section>
+
+    <!-- collections -->
+    <section class="collection-container">
+        <a href="#" class="collection">
+            <img src="img/laptops-and-pcs.png" alt="">
+            <p class="collection-title">Laptops & PCs</p>
+        </a>
+        <a href="#" class="collection">
+            <img src="img/phones-and-tablets.png" alt="">
+            <p class="collection-title">Phones & Tablets</p>
+        </a>
+        <a href="#" class="collection">
+            <img src="img/tech-accessories.png" alt="">
+            <p class="collection-title">Accessories</p>
+        </a>
+    </section>
+    
+    <section id="men-tshirt-products-2"></section>
+
+    <footer></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/home.js"></script>
+
+    <script>
+        getProducts('Men Tshirt').then(data => createProductSlider(data, '#men-tshirt-products', 'Men T-shirt'))
+        getProducts('Men Tshirt').then(data => createProductSlider(data, '#men-tshirt-products-2', 'Men T-shirt'))
+    </script>
+    
+</body>
+</html>
